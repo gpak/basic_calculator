@@ -42,3 +42,5 @@ while True:
         break
     else:
             print('Invalid Number')
+
+#changed to lambda
