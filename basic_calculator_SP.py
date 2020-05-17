@@ -1,25 +1,31 @@
 # Creating a simple calculator.
 # x = first number
 # y = second number
-def add(x,y):
-    addition = x + y
-    return addition
+#def add(x,y):
+#    addition = x + y
+#    return addition
+
+#Lamda function replaced/
+add = lambda x, y : x + y
 #Check to see if function works.
 #print(add(2, 3))
-def subtract(x,y):
-    subtraction = x - y
-    return subtraction
+#def subtract(x,y):
+#    subtraction = x - y
+#    return subtraction
+subtract = lambda x, y : x - y
 
-def multiply(x,y):
-    multiplication = x * y
-    return multiplication
+#def multiply(x,y):
+#    multiplication = x * y
+#    return multiplication
+multiply = lambda x, y : x * y
 
-def divide(x,y):
-    division = x / y
-    return division
+#def divide(x,y):
+#    division = x / y
+#    return division
+divide = lambda x, y : x / y
 
 while True:
-    choice = input("Enter Choice:  1, 2, 3, 4: ")
+    choice = input("Enter Choice:  1 = '+', 2 = '-', 3 = '*', 4 = '/': ")
 
     if choice in ('1','2','3','4'):
         num1 = float(input("Enter first number:"))
